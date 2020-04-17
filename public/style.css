@@ -1,0 +1,122 @@
+  
+body {
+    display: block;
+    color: #333;
+    font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+    background-color: #f2f2f2;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  head {
+    height: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    margin: 0 auto;
+    background: #fff;
+    width: 1240px;
+    height: 100vh;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    background: #fff;
+    width: 1240px;
+    height: 100vh;
+    z-index: -1;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+  
+  
+  #app {
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+    width: 1240px;
+    background-color: none;
+    top: 0px;
+    z-index: 0.5;
+    position: relative;
+  }
+  
+  #MediaFeed {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 0;
+  }
+  
+  #sidebar {
+    background-color: #ffffff;
+    position: absolute;
+    top: 360px;
+    left: 900px;
+    padding-left: 0;
+    width: 320px;
+    margin: 0;
+  }
+  
+  progress {
+    margin-right: 12px;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    height: 2px;
+  }
+  progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    flex: 1 1 auto;
+    margin: 40px;
+    width: 354px;
+  }
+  progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  }
+  progress[value]::-webkit-progress-value {
+    background-color: orange;
+    transition: opacity 0.15s;
+  }
+  
+  progress {
+    margin-right: 12px;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    height: 2px;
+  }
+  
+  progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    flex: 1 1 auto;
+    margin: 40px;
+    width: 354px;
+  }
+  
+  progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  }
+  
+  progress[value]::-webkit-progress-value {
+    background-color: orange;
+    transition: opacity 0.15s;
+  }
